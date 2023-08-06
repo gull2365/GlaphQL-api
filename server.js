@@ -30,8 +30,14 @@ const typeDefs = gql`
     id: ID!
     firstName: String!
     lastName: String!
+    """
+    Is the sum of firstName + lastName as a string
+    """
     fullName: String!
   }
+  """
+  Tweet  object represents a resource for a Tweet
+  """
   type Tweet {
     id: ID!
     text: String!
